@@ -93,46 +93,49 @@ body {
   padding-top: 0;
 }
 
-/* header */
+/*     HEADER     */
 
 .header {
   border-bottom: 1px solid var(--border-color-header);
 }
 
-.main-block {
+.header-container {
   display: flex;
   align-items: center;
 }
-/*Логотип*/
 
-.logo-header {
+/*   logo   */
+
+.header__logo {
   margin-right: 93px;
   color: var(--color-logo);
+}
+
+.logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.logo-web {
+.logo__first-word {
   color: var(--accent-color);
 }
 
-/*Навигация*/
+/*   navigation    */
 
 .nav {
   display: flex;
   align-items: center;
 }
 
-.site-nav {
+.nav__list {
   display: flex;
+  gap: 50px;
 }
 
-.site-nav .item + .item {
-  margin-left: 50px;
-}
+.nav__link {
+  position: relative;
 
-.site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -143,20 +146,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link.current {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
-}
-
-.link.header-link {
-  position: relative;
-}
-
-.header-link::after {
+.nav__link::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -173,60 +168,63 @@ body {
     transform 500ms var(--animation-timing-function);
 }
 
-.header-link:hover::after {
+.nav__link:hover::after {
   opacity: 1;
   transform: scaleX(1);
 }
 
-.current.header-link::after {
+.nav--current {
+  color: var(--accent-color);
+}
+
+.nav--current::after {
   opacity: 1;
   transform: scaleX(1);
 }
 
-/*Контакты*/
+/*   contacts   */
 
-.contacts-header {
+.contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts__list {
   display: flex;
+  align-items: center;
+  gap: 30px;
+
   margin-left: auto;
 }
 
-.contacts-item {
+.header-contacts__item {
   display: flex;
   align-items: center;
 
   color: rgba(117, 117, 117, 1);
 }
 
-.contacts-item .link {
-  gap: 10px;
+.header-contacts__link {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  color: currentColor;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 
   transition: color 250ms var(--animation-timing-function);
 }
 
-.contacts-item .link:hover,
-.contacts-item .link:focus {
+.header-contacts__item:hover,
+.header-contacts__item:focus {
   color: var(--accent-color);
 }
 
-.icon-mailto,
-.icon-smartphone {
+.header-contacts__icon {
   fill: currentColor;
 }
 
-.contacts-header .item + .item {
-  margin-left: 50px;
-}
-
-/* Hero */
+/* HERO */
 
 .hero,
 .footer {
