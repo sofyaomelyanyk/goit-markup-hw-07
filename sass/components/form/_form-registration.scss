@@ -1,0 +1,34 @@
+.form-registration {
+   display: flex;
+   flex-direction: column;
+   width: 448px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field__text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+
+ .form-field__link {
+   color: var(--accent-color);
+ }
+ 
+ .registration-button {
+   background-color: var(--accent-color);
+   color: var(--primary-white-color);
+   margin: 0 auto;
+   padding: 10px 55px;
+ }

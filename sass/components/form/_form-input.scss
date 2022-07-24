@@ -1,0 +1,20 @@
+.input-wrap {
+   position: relative;
+ }
+ 
+ .form-field__input {
+   width: 100%;
+ 
+   padding: 11px 12px 11px 42px;
+   font: inherit;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   cursor: pointer;
+ 
+   transform: border 250ms var(--animation-timing-function);
+ }
+ 
+ .form-field__input:focus {
+   outline: transparent;
+   border-color: var(--accent-color);
+ }

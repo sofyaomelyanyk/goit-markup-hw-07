@@ -1,0 +1,30 @@
+.button {
+   display: inline-flex;
+   align-items: center;
+ 
+   border-radius: 4px;
+   border: 1px solid transparent;
+   box-shadow: 0px 4px 4pxrgba (0, 0, 0, 0.15);
+ 
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.9;
+   text-align: center;
+   letter-spacing: 0.06em;
+   cursor: pointer;
+ 
+   transform: scale(1);
+   transition: box-shadow 250ms var(--animation-timing-function),
+     color 250ms var(--animation-timing-function),
+     background-color 250ms var(--animation-timing-function);
+ }
+
+ .button:hover,
+ .button:focus {
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+   background-color: var(--accent-color);
+   color: var(--primary-white-color);
+   transform: scale(1.05);
+ }

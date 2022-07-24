@@ -1,0 +1,12 @@
+.form-field__input:focus + .form-field__icon {
+   fill: var(--accent-color);
+ }
+ 
+ .form-field__icon {
+   position: absolute;
+   top: 50%;
+   left: 15px;
+   transform: translateY(-50%);
+ }
+
+ 

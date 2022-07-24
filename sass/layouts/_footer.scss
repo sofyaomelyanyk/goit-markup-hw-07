@@ -1,0 +1,36 @@
+.footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+ }
+ 
+ .footer__item {
+   display: inline-flex;
+   flex-direction: column;
+   margin-right: 70px;
+ }
+ 
+ .footer__logo {
+   display: block;
+   margin-bottom: 20px;
+ 
+   color: var(--primary-white-color);
+   font-family: Raleway, sans-serif;
+   font-size: 26px;
+   line-height: 1.19;
+ }
+
+ .footer__item--margin {
+   margin-right: 93px;
+ }
+ 
+ .footer-subtitle {
+   padding-top: 12px;
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+ 
+   color: var(--primary-white-color);
+ }
