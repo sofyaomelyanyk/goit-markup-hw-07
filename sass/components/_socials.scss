@@ -21,26 +21,33 @@
  
    transition: color 250ms var(--animation-timing-function),
      background-color 250ms var(--animation-timing-function);
+
+     &:hover,
+     &:focus {
+       color: var(--primary-white-color);
+       background-color: var(--accent-color);
+     }
+
+     &--bgc {
+      color: var(--primary-white-color);
+      background-color: rgb(255, 255, 255, 0.1);
+    }
+    
+
  }
  
- .social__link:hover,
- .social__link:focus {
-   color: var(--primary-white-color);
-   background-color: var(--accent-color);
- }
- 
+
  .social__icon {
    fill: currentColor;
    width: 20px;
    height: 20px;
+
+   &--color {
+      fill: currentColor;
+    }
+
  }
  
- .social__link--bgc {
-   color: var(--primary-white-color);
-   background-color: rgb(255, 255, 255, 0.1);
- }
  
- .social__icon--color {
-   fill: currentColor;
- }
+ 
  

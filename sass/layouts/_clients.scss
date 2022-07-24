@@ -18,14 +18,16 @@
    transition: color 250ms var(--animation-timing-function),
      background-color 250ms var(--animation-timing-function),
      transform 250ms var(--animation-timing-function);
- }
- 
- .clients__item:hover,
- .clients__item:focus {
+
+     &:hover,
+     &:focus {
    color: var(--accent-color);
    border-color: var(--accent-color);
    transform: scale(1.1, 1.1);
+   }
+
  }
+ 
  
  .clients__link {
    display: flex;

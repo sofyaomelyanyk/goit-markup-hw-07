@@ -12,9 +12,17 @@
    cursor: pointer;
  
    transform: border 250ms var(--animation-timing-function);
+
+   &:focus {
+      outline: transparent;
+      border-color: var(--accent-color);
+    }
+
+    &:focus + .form-field__icon {
+      fill: var(--accent-color);
+    }
+
  }
+
  
- .form-field__input:focus {
-   outline: transparent;
-   border-color: var(--accent-color);
- }
+ 

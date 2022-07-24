@@ -1,16 +1,19 @@
 .form-field__label {
    margin-bottom: 4px;
+
+   &:last-child {
+      margin-bottom: 0;
+    }
+   
  }
  
- .form-field__label:last-child {
-   margin-bottom: 0;
- }
-
  .agreement {
    margin-bottom: 30px;
+
+   &__label {
+      display: inline-flex;
+      gap: 10px;
+    }
+    
  }
 
- .agreement__label {
-   display: inline-flex;
-   gap: 10px;
- }

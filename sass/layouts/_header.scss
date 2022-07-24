@@ -31,6 +31,12 @@
    align-items: center;
  
    color: rgba(117, 117, 117, 1);
+
+   &:hover,
+   &:focus {
+   color: var(--accent-color);
+   }
+
  }
  
  .header-contacts__link {
@@ -43,10 +49,6 @@
    transition: color 250ms var(--animation-timing-function);
  }
  
- .header-contacts__item:hover,
- .header-contacts__item:focus {
-   color: var(--accent-color);
- }
  
  .header-contacts__icon {
    fill: currentColor;

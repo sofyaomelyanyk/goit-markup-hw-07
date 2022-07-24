@@ -1,6 +1,12 @@
 .address {
    display: flex;
    flex-direction: column;
+
+   &--color {
+      color: var(--primary-white-color);
+      line-height: 1.7;
+    }
+    
  }
  
  .address__list {
@@ -17,7 +23,3 @@
    line-height: 1.7;
  }
  
- .address--color {
-   color: var(--primary-white-color);
-   line-height: 1.7;
- }

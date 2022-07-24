@@ -2,12 +2,6 @@
    margin-bottom: 20px;
  }
  
- .form-field__textarea::placeholder {
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.01em;
-   color: rgba(117, 117, 117, 0.5);
- }
  
  .form-field__textarea {
    height: 120px;
@@ -18,9 +12,19 @@
    resize: none;
  
    transform: border 250ms var(--animation-timing-function);
+
+   &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+      outline: transparent;
+      border-color: var(--accent-color);
+    }
+
  }
  
- .form-field__textarea:focus {
-   outline: transparent;
-   border-color: var(--accent-color);
- }
+ 
