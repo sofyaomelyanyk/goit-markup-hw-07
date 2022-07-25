@@ -8,12 +8,16 @@
  }
  
  .agreement {
+   display: block;
+   text-align: center;
    margin-bottom: 30px;
 
    &__label {
       display: inline-flex;
       gap: 10px;
     }
-    
+   
  }
 
+ 
+ 
